@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drawing Generator</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:ital,wght@0,400;0,700;1,500&display=swap');
+body{
+  background-color: #80d3e5;
+}
+a {
+  font-family: "Montserrat" , sans-serif;
+  text-decoration: none;
+}
+h1 {
+  font-family: "Rubik" , sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+p {
+  font-family: "Montserrat" , sans-serif;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+.nav ul{
+  list-style-type: none;
+  display: inline-block;
+  position: absolute;
+  padding: 4px;
+  margin: 0 auto;
+}
+.nav li{
+  display: inline-block;
+}
+.nav li a{
+  min-width: 60px;
+  text-decoration: none;
+  font-family: 'Montserrat' , sans-serif;
+  text-align: center;
+  display: block;
+  padding: 8px;
+}
+.nav li:hover a {
+  color: black;
+}
+.nav li:hover ul a {
+  color: black;
+  line-height: 40px;
+  height: 40px;
+}
+.nav li ul li{
+  display: block;
+  float: none;
+}
+.nav li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+input[type='checkbox']{
+  opacity: 0;
+  width: 0;
+}
+label[for='menu']{
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+.nav input[type='checkbox']:checked ~ #nav_list{
+  display: block;
+}
+.page_active {
+  color: #000000;
+}
+.page_link{
+  color: white;
+}
+.main_home {
+  text-align: center;
+  margin: 3rem;
+}
+button {
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Montserrat" , sans-serif;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #ffab06;
+  -webkit-box-shadow: 0px 6px 12px -6px rgba(68, 151, 207,1);
+  -moz-box-shadow: 0px 6px 12px -6px rgba(68, 151, 207,1);
+  box-shadow: 0px 6px 12px -6px rgba(68, 151, 207,1);
+  border: none;
+  width: 160px;
+  height: 80px;
+}
+button:hover {
+  cursor: pointer;
+}
+.p_home {
+  font-size: 1.4rem;
+}
+.home_buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+  .nav #nav_bar1{
+    display: block;
+    background-color: white;
+    height: 4px;
+    width: 20px;
+    margin: 4px;
+    cursor: pointer;
+  }
+  .nav #nav_bar2{
+    display: block;
+    background-color: white;
+    height: 4px;
+    width: 20px;
+    margin: 4px;
+    cursor: pointer;
+  }
+  .nav #nav_bar3{
+    display: block;
+    background-color: white;
+    height: 4px;
+    width: 20px;
+    margin: 4px;
+    cursor: pointer;
+  }
+  .nav ul {
+    position: static;
+    display: none;
+  }
+  .nav li {
+    margin: 0;
+    background-color: #ffab06;
+    -webkit-box-shadow: 0px 6px 12px -6px rgba(68, 151, 207,1);
+    -moz-box-shadow: 0px 6px 12px -6px rgba(68, 151, 207,1);
+    box-shadow: 0px 6px 12px -6px rgba(68, 151, 207,1);
+  }
+  .nav ul li, .nav li a {
+    width:100%;
+  }
+  .main_home {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .p_home {
+    font-size: 1.4rem;
+  }
+  .home_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_buttons > * {
+    margin: 0.4rem;
+  }
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+  <body>
+    <div class="wrapper">
+  <nav class="nav"><label for='menu'>
+    <div id='nav_bar1'>
+    </div>
+    <div id='nav_bar2'>
+    </div>
+    <div id='nav_bar3'>
+    </div>
+  </label>
+  <input type='checkbox' id='menu'>
+    <ul id="nav_list">
+      <li><a href="https://atec.utdallas.app/~knl180001/ideagenie/home.html" class="page_link">Home</a></li>
+      <li><a href="https://atec.utdallas.app/~knl180001/ideagenie/draw.php" class="page_link">Draw</a></li>
+      <li><a href="https://atec.utdallas.app/~knl180001/ideagenie/design.php" class="page_link">Design</a></li>
+      <li><a href="https://atec.utdallas.app/~knl180001/ideagenie/about.html" class="page_active">About</a></li>
+    </ul>
+  </nav>
+  <div class="main_home">
+    <h1>About</h1>
+    <p class="p_home">This web appication was created to help designers and artists practice
+ 	their skills by creating brief and fun prompts for their creative interpretation. Feel
+	to share with others, and upload your creations to social media with #ideagenie !
+	<br>Happy Creating!</p>
+  </div>
+</div>
+</body>
+</html>
